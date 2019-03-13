@@ -1,19 +1,16 @@
 package com.tewinsid.drools.chapter1;
 
+import com.tewinsid.drools.BaseTest;
 import com.tewinsid.drools.model.Car;
 import com.tewinsid.drools.model.Person;
 import org.junit.jupiter.api.Test;
-import org.kie.api.KieServices;
-import org.kie.api.runtime.KieContainer;
 import org.kie.api.runtime.KieSession;
 
-public class Droos7ApiTest {
+public class Droos7ApiTest extends BaseTest {
 
     @Test
     public void test() {
-        KieServices kieServices = KieServices.Factory.get();
-        KieContainer kieContainer = kieServices.getKieClasspathContainer();
-        KieSession kieSession = kieContainer.newKieSession("all-rules");
+        KieSession kieSession = getKieSession("test-drools7");
 
         Person p1 = new Person();
         p1.setAge(30);

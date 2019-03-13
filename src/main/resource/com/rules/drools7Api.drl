@@ -2,18 +2,20 @@ package com.rules
 
 import com.tewinsid.drools.model.Car
 
-rule "test-drolls7-older than 60"
+rule "test-drools7-older than 60"
+    agenda-group "test-drools7"
+    when
+        $car : Car(person.age > 60)
+    then
+        $car.setDiscount(80);
+        System.out.println("test-drools7-older than 60: " + $car.getPerson().getAge());
+    end
 
-when $car : Car(person.age > 60)
-then
-    $car.setDiscount(80);
-    System.out.println("test-drools7-older than 60: " + $car.getPerson().getAge());
-end
-
-rule "test-drolls7-other"
-
-when $car : Car(person.age <= 60)
-then
-    $car.setDiscount(90);
-    System.out.println("test-drools7-other: " + $car.getPerson().getAge());
-end
+rule "test-drools7-other"
+    agenda-group "test-drools7"
+    when
+        $car : Car(person.age <= 60)
+    then
+        $car.setDiscount(90);
+        System.out.println("test-drools7-other: " + $car.getPerson().getAge());
+    end

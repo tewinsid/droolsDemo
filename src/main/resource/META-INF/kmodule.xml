@@ -3,4 +3,7 @@
     <kbase name="rules">
         <ksession name="all-rules"/>
     </kbase>
+    <kbase name="test" packages="com.rules" default="true">
+
+    </kbase>
 </kmodule>
