@@ -3,7 +3,7 @@
     <kbase name="rules">
         <ksession name="all-rules"/>
     </kbase>
-    <kbase name="test" packages="com.rules" default="true">
-
+    <kbase name="stateless" packages="com.stateless" default="false">
+        <ksession name="stateless-rules" type="stateless"/>
     </kbase>
 </kmodule>
