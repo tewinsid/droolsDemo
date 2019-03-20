@@ -15,6 +15,20 @@ public class BaseTest {
         return kieSession;
     }
 
+    protected KieSession getKieSessionBySessionName(String sessionName) {
+        KieServices kieServices = KieServices.Factory.get();
+        KieContainer kieContainer = kieServices.getKieClasspathContainer();
+        KieSession kieSession = kieContainer.newKieSession(sessionName);
+
+        return kieSession;
+    }
+
+    protected KieSession getKieSessionBySessionName(String sessionName, String groupName) {
+        KieSession kieSession = getKieSessionBySessionName(sessionName);
+        //kieSession.get
+        return kieSession;
+    }
+
     protected KieSession getKieSession(String agendaGroupName) {
         KieSession kieSession = getKieSession();
         //利用每个规则的group进行区分

@@ -1,0 +1,11 @@
+package com.ruleFlowGroup
+
+import com.tewinsid.drools.model.Person
+
+rule "rule-flow-group-test-1"
+    ruleflow-group "rule-flow-group-1"
+    when
+//        $p : Person(age > 10)
+    then
+        System.out.println("focus 1");
+    end

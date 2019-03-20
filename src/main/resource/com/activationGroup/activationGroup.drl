@@ -1,0 +1,17 @@
+package com.activationGroup
+
+import com.tewinsid.drools.model.Person
+
+rule "activation-group-test-1"
+    activation-group "activation-group"
+    when
+    then
+        System.out.println("activation-group-test-1");
+    end
+
+rule "activation-group-test-2"
+    activation-group "activation-group"
+    when
+    then
+        System.out.println("activation-group-test-2");
+    end

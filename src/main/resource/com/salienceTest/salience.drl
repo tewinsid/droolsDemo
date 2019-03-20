@@ -1,0 +1,24 @@
+package com.salienceTest
+
+import com.tewinsid.drools.model.Person
+
+rule "test-salience-1"
+    when
+    then
+        System.out.println("salience 1 enforced");
+    end
+
+rule "test-salience-2"
+    salience 1
+    when
+    then
+        System.out.println("salience 2 enforced");
+    end
+
+rule "test-salience-3"
+    salience sal
+    when
+        $p : Person(sal : age)
+    then
+        System.out.println("salience 3 enforced");
+    end

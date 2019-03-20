@@ -3,7 +3,32 @@
     <kbase name="rules">
         <ksession name="all-rules"/>
     </kbase>
+
     <kbase name="stateless" packages="com.stateless" default="false">
         <ksession name="stateless-rules" type="stateless"/>
+    </kbase>
+
+    <kbase name="no-loop-rules" packages="com.no-loop">
+        <ksession name="no-loop-rules" />
+    </kbase>
+
+    <kbase name="rule-flow-group" packages="com.ruleFlowGroup">
+        <ksession name="ruleFlowGroup-rules" />
+    </kbase>
+
+    <kbase name="lock-on-active" packages="com.lockOnActive">
+        <ksession name="lockOnActive-rules" />
+    </kbase>
+
+    <kbase name="salience-kbase" packages="com.salienceTest">
+        <ksession name="salience-rules" />
+    </kbase>
+
+    <kbase name="auto-focus-kbase" packages="com.autoFocus">
+        <ksession name="auto-focus-rules" />
+    </kbase>
+
+    <kbase name="activation-group-kbase" packages="com.activationGroup">
+        <ksession name="activation-group-rules" />
     </kbase>
 </kmodule>

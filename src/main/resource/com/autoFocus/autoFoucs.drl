@@ -1,0 +1,23 @@
+package com.autoFocus
+
+rule "test-auto-focus-1"
+    agenda-group "auto-focus-agenda-1"
+    auto-focus true
+    when
+    then
+        System.out.println("rule 1 agenda 1");
+    end
+
+rule "test-auto-focus-2"
+    agenda-group "auto-focus-agenda-1"
+    when
+    then
+        System.out.println("rule 2 agenda 1");
+    end
+
+rule "test-auto-focus-3"
+    agenda-group "auto-focus-agenda-2"
+    when
+    then
+        System.out.println("rule 3 agenda 2");
+    end
