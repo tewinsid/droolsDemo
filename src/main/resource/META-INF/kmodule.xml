@@ -31,4 +31,12 @@
     <kbase name="activation-group-kbase" packages="com.activationGroup">
         <ksession name="activation-group-rules" />
     </kbase>
+
+    <kbase name="date-effective-kbase" packages="com.dateEffective">
+        <ksession name="date-effective-rules" />
+    </kbase>
+
+    <kbase name="timer-kbase" packages="com.timerTest">
+        <ksession name="timer-rules" />
+    </kbase>
 </kmodule>

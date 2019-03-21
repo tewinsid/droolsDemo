@@ -1,0 +1,16 @@
+package com.timerTest
+
+import com.tewinsid.drools.model.Server
+
+rule "timerTest-test-1"
+    timer (corn:* 0/1 * * * ?)
+    when
+    then
+        System.out.println("timerTest-test-1");
+    end
+
+rule "timerTest-test-2"
+    when
+    then
+        System.out.println("timerTest-test-2");
+    end
